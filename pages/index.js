@@ -16,6 +16,8 @@ import {
   FaYoutube,
   FaInstagram,
   FaFacebook,
+  FaSpotify,
+  FaDeezer,
 } from "react-icons/fa";
 export default function Index() {
   return (
@@ -61,6 +63,22 @@ export default function Index() {
             <Button colorScheme="white">
               <Link href="https://soundcloud.com/isi8band" isExternal>
                 <Icon as={FaSoundcloud} w={10} h={10} color={"white"} />
+              </Link>
+            </Button>
+            <Button colorScheme="white">
+              <Link
+                href="https://open.spotify.com/artist/5T2HaRxXtwOZa71pnWCJSC?si=IvOq8q0DQH6j64hqW5pbhg"
+                isExternal
+              >
+                <Icon as={FaSpotify} w={10} h={10} color={"white"} />
+              </Link>
+            </Button>
+            <Button colorScheme="white">
+              <Link
+                href="https://www.deezer.com/fr/artist/178191167"
+                isExternal
+              >
+                <Icon as={FaDeezer} w={10} h={10} color={"white"} />
               </Link>
             </Button>
           </HStack>
