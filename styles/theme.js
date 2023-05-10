@@ -14,6 +14,7 @@ const breakpoints = createBreakpoints({
   lg: "960px",
   xl: "1200px",
   "2xl": "1536px",
+  "3xl": "192Opx",
 });
 
 const overrides = {

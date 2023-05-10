@@ -1,6 +1,5 @@
 import Head from "next/head";
 import {
-  useColorMode,
   Flex,
   HStack,
   Button,
@@ -11,6 +10,8 @@ import { Image } from "@chakra-ui/react";
 import { Container } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/react";
 import { Fade } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import { Stack, Text,AspectRatio } from '@chakra-ui/react'
 import {
   FaSoundcloud,
   FaYoutube,
@@ -21,7 +22,10 @@ import {
 } from "react-icons/fa";
 export default function Index() {
   return (
-    <Container bg={"#1A202C"} maxW="container.2xl" h={"100vh"} w="100%">
+    <Container bgImage="url('/ezgif-4-dcf2f78ab1.gif')"
+  maxW="container.2xl"  w="100%">
+
+    
       <Head>
         <title>I.S.I. 8</title>
       </Head>
@@ -36,6 +40,7 @@ export default function Index() {
               height="500px"
             />
           </Flex>
+
         </Center>
         <Center mt={10} h="100px">
           <HStack padding="50px" maxW="100%">
@@ -44,6 +49,7 @@ export default function Index() {
                 <Icon as={FaInstagram} w={10} h={10} color={"white"} />
               </Link>
             </Button>
+            
             <Button colorScheme="white">
               <Link
                 href="https://www.facebook.com/ISI-8-101967501917069"
@@ -82,8 +88,30 @@ export default function Index() {
               </Link>
             </Button>
           </HStack>
+
+
         </Center>
       </Fade>
+     
+      <Container as="footer" role="contentinfo" py={{ base: '12', md: '16' }}>
+      <AspectRatio maxW='560px' ratio={1}>
+          <iframe 
+          src="https://open.spotify.com/embed/album/7dgrYvAJs8zgOrb65BmHgB?utm_source=generator&theme=0" 
+          width="100%" height="352" 
+          frameBorder="0" allowfullscreen="" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+           loading="lazy"/>
+
+</AspectRatio>
+      <Center color="white" mt={20}>
+    <Stack>
+      <Text fontSize="sm" center color="subtle">
+     {new Date().getFullYear()} © ISI8 All rights reserved.
+      </Text>
+    </Stack>
+    </Center>
+  </Container>
     </Container>
+    
   );
 }
