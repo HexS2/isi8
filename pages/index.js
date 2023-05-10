@@ -92,13 +92,12 @@ export default function Index() {
 
         </Center>
       </Fade>
-     
-      <Container as="footer" role="contentinfo" py={{ base: '12', md: '16' }}>
+    <Container as="footer" role="contentinfo" py={{ base: '12', md: '16' }}>
       <AspectRatio maxW='560px' ratio={1}>
           <iframe 
           src="https://open.spotify.com/embed/album/7dgrYvAJs8zgOrb65BmHgB?utm_source=generator&theme=0" 
           width="100%" height="352" 
-          frameBorder="0" allowfullscreen="" 
+          frameBorder="0" allowFullScreen="" 
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
            loading="lazy"/>
 
