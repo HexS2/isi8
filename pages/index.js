@@ -5,20 +5,17 @@ import {
     Button,
     Link,
     Center,
+    Image,
+    Container,
+    Icon,
+    Fade,
+    Box,
+    Stack,
+    Text,
+    AspectRatio
+
 } from "@chakra-ui/react";
-import {Image} from "@chakra-ui/react";
-import {Container} from "@chakra-ui/react";
-import {Icon} from "@chakra-ui/react";
-import {Fade} from "@chakra-ui/react";
-import {Box} from "@chakra-ui/react";
-import {Stack, Text, AspectRatio} from '@chakra-ui/react'
-import {
-    motion,
-    useScroll,
-    useSpring,
-    useTransform,
-    MotionValue
-} from "framer-motion";
+
 
 import {
     FaSoundcloud,
@@ -31,8 +28,9 @@ import {
 
 export default function Index() {
     return (
-
-
+        /*
+        Main container
+         */
         <Container bgImage="url('/background.gif')"
                    maxW="container.2xl" w="100%" backgroundRepeat="repeat-y"
                    backgroundSize="100%"
@@ -105,12 +103,18 @@ export default function Index() {
 
                 </Center>
             </Fade>
-            <Box w='100%' h='1000px' bgImage="url('/isi8_book_2023_page-0001.jpg')"bgSize='cover' bgAttachment='fixed' bgPos='50% 100%' pos='relative' bgRepeat='no-repeat' objectFit={"cover"}> </Box>
-            <Box w='100%' h='1000px' bg='blue' bgImage="url('/isi8_book_2023_page-0002.jpg')"bgSize='cover' bgAttachment='fixed' bgPos='50% 100%' pos='relative' bgRepeat='no-repeat' > </Box>
-            <Box w='100%' h='1000px' bg='blue' bgImage="url('/isi8_book_2023_page-0003.jpg')"bgSize='cover' bgAttachment='fixed' bgPos='50% 100%' pos='relative' bgRepeat='no-repeat' > </Box>
-            <Box w='100%' h='1000px' bg='blue' bgImage="url('/isi8_book_2023_page-0004.jpg')"bgSize='cover' bgAttachment='fixed' bgPos='50% 100%' pos='relative' bgRepeat='no-repeat' > </Box>
-            <Box w='100%' h='1000px' bg='blue' bgImage="url('/isi8_book_2023_page-0005.jpg')"bgSize='cover' bgAttachment='fixed' bgPos='50% 100%' pos='relative' bgRepeat='no-repeat' > </Box>
-            <Box w='100%' h='1000px' bg='blue' bgImage="url('/isi8_book_2023_page-0006.jpg')"bgSize='cover' bgAttachment='fixed' bgPos='50% 100%' pos='relative' bgRepeat='no-repeat' > </Box>
+            <Box w='100%' h='1000px' bgImage="url('/isi8_book_2023_page-0001.jpg')" bgSize='cover' bgAttachment='fixed'
+                 bgPos='50% 100%' pos='relative' bgRepeat='no-repeat' objectFit={"cover"}> </Box>
+            <Box w='100%' h='1000px' bg='blue' bgImage="url('/isi8_book_2023_page-0002.jpg')" bgSize='cover'
+                 bgAttachment='fixed' bgPos='50% 100%' pos='relative' bgRepeat='no-repeat'> </Box>
+            <Box w='100%' h='1000px' bg='blue' bgImage="url('/isi8_book_2023_page-0003.jpg')" bgSize='cover'
+                 bgAttachment='fixed' bgPos='50% 100%' pos='relative' bgRepeat='no-repeat'> </Box>
+            <Box w='100%' h='1000px' bg='blue' bgImage="url('/isi8_book_2023_page-0004.jpg')" bgSize='cover'
+                 bgAttachment='fixed' bgPos='50% 100%' pos='relative' bgRepeat='no-repeat'> </Box>
+            <Box w='100%' h='1000px' bg='blue' bgImage="url('/isi8_book_2023_page-0005.jpg')" bgSize='cover'
+                 bgAttachment='fixed' bgPos='50% 100%' pos='relative' bgRepeat='no-repeat'> </Box>
+            <Box w='100%' h='1000px' bg='blue' bgImage="url('/isi8_book_2023_page-0006.jpg')" bgSize='cover'
+                 bgAttachment='fixed' bgPos='50% 100%' pos='relative' bgRepeat='no-repeat'> </Box>
 
             <Container as="footer" role="contentinfo" py={{base: '12', md: '16'}}>
                 <AspectRatio maxW='560px' ratio={1}>
@@ -132,6 +136,5 @@ export default function Index() {
                 </Center>
             </Container>
         </Container>
-
     );
 }
