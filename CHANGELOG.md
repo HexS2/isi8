@@ -4,6 +4,7 @@ CHANGELOG
 [2023-06-07]
 
 [2023-06-06]
+ * 🪚 refactor(#NextJS): Switching to 13
  * remove unused bullshitos
 
 [2023-05-10]
