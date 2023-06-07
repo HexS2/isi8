@@ -4,6 +4,7 @@ CHANGELOG
 [2023-06-07]
 
 [2023-06-06]
+ * 🔨 fix(#rendering): Added suspense to handle big image payload
  * 🪚 refactor(#NextJS): Switching to 13
  * remove unused bullshitos
 
